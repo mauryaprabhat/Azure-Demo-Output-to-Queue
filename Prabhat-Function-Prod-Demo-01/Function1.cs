@@ -32,7 +32,7 @@ namespace Prabhat_Function_Prod_Demo_01
                 : $"Hello, {name}. This HTTP triggered function executed successfully.";
             if (!string.IsNullOrEmpty(name))
             {
-                msg.Add(String.Format("Name passed to  the function: {0}",name));
+                msg.Add(String.Format("Name passed to  the live azure  function: {0}",name));
             }
             return new OkObjectResult(responseMessage);
         }
